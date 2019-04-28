@@ -13,6 +13,7 @@
 #include <lwip/sys.h>
 #include <lwip/netdb.h>
 #include <mbedtls/sha256.h>
+#include <mbedtls/ssl.h>
 #include <mbedtls/oid.h>
 #include <algorithm>
 #include <string>
