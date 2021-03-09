@@ -52,7 +52,6 @@ set(LIBRARY_SRCS
   libraries/FS/src/vfs_api.cpp
   libraries/HTTPClient/src/HTTPClient.cpp
   libraries/HTTPUpdate/src/HTTPUpdate.cpp
-  libraries/LITTLEFS/src/LITTLEFS.cpp
   libraries/NetBIOS/src/NetBIOS.cpp
   libraries/Preferences/src/Preferences.cpp
   libraries/SD_MMC/src/SD_MMC.cpp
@@ -132,7 +131,6 @@ set(includedirs
   libraries/FS/src
   libraries/HTTPClient/src
   libraries/HTTPUpdate/src
-  libraries/LITTLEFS/src
   libraries/NetBIOS/src
   libraries/Preferences/src
   libraries/SD_MMC/src
