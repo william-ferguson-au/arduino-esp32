@@ -50,7 +50,7 @@ const int8_t esp32_adc2gpio[20] = {36, 37, 38, 39, 32, 33, 34, 35, -1, -1, 4, 0,
 const int8_t esp32_adc2gpio[20] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 #endif
 
-const DRAM_ATTR esp32_gpioMux_t esp32_gpioMux[SOC_GPIO_PIN_COUNT]={
+const DRAM_ATTR esp32_gpioMux_t esp32_gpioMux[GPIO_PIN_COUNT]={
 #if CONFIG_IDF_TARGET_ESP32
     {0x44, 11, 11, 1},
     {0x88, -1, -1, -1},
@@ -151,7 +151,7 @@ typedef struct {
     void* arg;
     bool functional;
 } InterruptHandle_t;
-static InterruptHandle_t __pinInterruptHandlers[SOC_GPIO_PIN_COUNT] = {0,};
+static InterruptHandle_t __pinInterruptHandlers[GPIO_PIN_COUNT] = {0,};
 
 #include "driver/rtc_io.h"
 
