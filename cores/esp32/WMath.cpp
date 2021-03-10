@@ -55,7 +55,7 @@ long random(long howbig)
     }
     return m >> 32;
 }
-
+/*
 long random(long howsmall, long howbig)
 {
     if(howsmall >= howbig) {
@@ -64,7 +64,7 @@ long random(long howsmall, long howbig)
     long diff = howbig - howsmall;
     return random(diff) + howsmall;
 }
-
+*/
 long map(long x, long in_min, long in_max, long out_min, long out_max) {
     const long dividend = out_max - out_min;
     const long divisor = in_max - in_min;
